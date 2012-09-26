@@ -15,30 +15,48 @@
 			font-family: Helvetica, Arial, sans-serif;
 	  }
 	  h2 {
-			font-size:30px;
-			font-weight:300;
+			font-size:50px;
+			font-weight:800;
 			color:#FFF;
 	  }
 	  .opacity {
 	                opacity: 0.4;
 	  }
 	  .button {
-	            background:#eee;
-	            width:100px;
-	             color:#fff;
-	             height:100px;
-		     -moz-border-radius: 20px;
-		    -webkit-border-radius: 20px;
-		    -khtml-border-radius: 20px;
-		    border-radius: 20px;
-		    text-align:center;
+	                background:#333;
+	                width:100px;
+	                color:#fff;
+	                height:100px;
+		        -moz-border-radius: 20px;
+		        -webkit-border-radius: 20px;
+		        -khtml-border-radius: 20px;
+		        border-radius: 20px;
+		        text-align:center;
 	  }
-
+	  .container {
+                        overflow:hidden;
+	                text-align: left;
+	                padding: 0px;
+	                border:0;
+	                width: 600px;
+	  }
+	  .box_1 {
+                        background: #0040FF;
+	                width: 200px;
+	                height: 200px;
+                        float: left;
+	  }
+	  .box_2 {
+	                background: #FF0000;
+	                width: 200px;
+	                height: 200px;
+	                float: left;
+	  }
 
 	</style>
 	
 	<body>
-	 		<h2>Kenny Ng</h2>
+	 	<h2>Kenny Ng</h2>
 		<div id='bio'>Crime-solver. Noir detective extraordinaire.</div>
 	 
 	 	<h3>Assignments</h3>
@@ -48,18 +66,20 @@
 		</ul>
 	
 		<h3>A nice button</h3>
-		<div class="button" value="HI this is a button"></div>
-
+		<a href="#"><div class="button">Hi, I am a button! Please click me.</div></a>
 
 		<h3>An invisible seal</h3>
 		<p><img width="50" class="opacity" src="seal.png" /></p>
 
 		<h3>A video</h3>
-		<video width="300" height="240" controls="controls">
+		<video width="600" height="480" controls="controls">
 		  <source src="gizmo.mp4" type="video/mp4" />
 		</video>
 		
 		<h3>Two boxes side by side</h3>
-
+		<div class="container">
+		  <div class="box_1"></div>
+		  <div class="box_2"></div>
+		</div>
 	</body>
 </html>
