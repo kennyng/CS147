@@ -35,8 +35,10 @@
 		echo "<p>name: ".$_POST["name"]."</p>";
 		echo "<p>select-shipper: ".$_POST["select-shipper"]."</p>";
 		?>
-		<p>I think this page is missing a footer.</p>
 	</div><!-- /content -->
+
+    <!-- footer -->
+    <?php include 'footer.php'; ?>
 
 
 </body>
